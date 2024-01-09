@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Final Project</title>
+    <style>
+      body {
+        background: radial-gradient(
+          859px at 10% 20%,
+          rgb(245, 220, 154) 0%,
+          rgb(164, 78, 51) 90%
+        );
+      }
+      h1 {
+        background: #4a2b13;
+        color: white;
+        font-size: 42px;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        padding: 10px;
+        margin: 10px 350px;
+        border: 3px solid white;
+        border-radius: 50px;
+      }
+      h2 {
+        color: black;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .beth_harmon {
+        display: block;
+        margin: 0 auto;
+        border: 10px solid #4a2b13; /* Added 'solid' as the border style */
+      }
+
+      .caption {
+        color: black;
+        text-align: center;
+        font-size: small;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+      }
+      .link {
+        color: #4a2b13;
+      }
+      button {
+        color: white;
+        font-size: 15px;
+        background: #4a2b13;
+        padding: 15px 20px;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #4a2b13;
+        border-radius: 50px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 2px 1px 5px black;
+      }
+      button:hover {
+        color: #4a2b13;
+        background: white;
+        cursor: pointer;
+      }
+      .play_chess {
+        text-decoration: none;
+      }
+
+      .list_1 {
+        padding: none;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        background: #4a2b13;
+        padding: 10px 20px;
+        border: 4px solid chocolate;
+      }
+
+      .trailer {
+        margin: 10px 200px;
+      }
+      .trailer_link {
+        color: white;
+        text-decoration: none;
+      }
+      .actors {
+        margin: 10px 0px;
+      }
+      .cast_link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .awards {
+        margin: 10px 200px;
+      }
+      .awards_link {
+        color: white;
+        text-decoration: none;
+      }
+      .paragraph_2 {
+        background: white;
+        color: #4a2b13;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 80px;
+        border: 3px solid #4a2b13;
+      }
+      .playing_chess {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><strong>♞The Queen's Gambit♞</strong></h1>
+    <h2>
+      Exploring the life of fictional female chess prodigy <em>Beth Harmon</em>.
+    </h2>
+    <p class="list_1">
+      <span class="trailer"
+        ><a
+          class="trailer_link"
+          href="https://www.youtube.com/watch?v=oZn3qSgmLqI"
+          >Trailer</a
+        ></span
+      >
+      <span class="actors"
+        ><a class="cast_link" href="https://www.imdb.com/title/tt10048342/"
+          >Actors</a
+        ></span
+      >
+      <span class="awards"
+        ><a class="awards_link" href="https://www.emmys.com/shows/queens-gambit"
+          >Awards</a
+        ></span
+      >
+    </p>
+    <img
+      class="beth_harmon"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/BethHarmon.jpg/220px-BethHarmon.jpg"
+      width="350"
+    />
+
+    <p class="caption">
+      Anya Taylor-Joy as Beth Harmon in
+      <a
+        class="link"
+        href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)"
+        >The Queen's Gambit</a
+      >
+    </p>
+    <a class="play_chess" href="https://www.youtube.com/watch?v=OCSbzArwB10">
+      <button>Learn how to play chess!</button>
+    </a>
+    <p class="paragraph_2">
+      "The Queen's Gambit" is a miniseries that follows the life of Beth Harmon,
+      an orphaned chess prodigy, from her childhood <br />
+      in an orphanage to her rise as a competitive chess player. Set in the
+      1950s and 1960s, the show explores Beth's journey as<br />
+      she battles personal demons, addiction, and societal expectations. Despite
+      facing challenges and gender biases in the<br />
+      male-dominated world of chess, Beth becomes a formidable player and
+      challenges the norms of the time. The series received <br />widespread
+      acclaim for its compelling storytelling, strong performances, and its
+      portrayal of the game of chess.
+    </p>
+
+    <img
+      class="playing_chess"
+      src="https://media.giphy.com/media/32dfpYx8kBX1bXSEu8/giphy.gif"
+      alt="Animated GIF"
+    />
+
+    <script>
+      let opening = prompt(
+        "Which opening do you want to learn; Caro-Kann Defense, Ponziani Opening, or Catalan Opening?"
+      );
+      opening = opening.toLowerCase();
+
+      if (opening === "caro-kann defense") {
+        alert(
+          "Learn the Caro-Khann Defense at https://www.chess.com/openings/Caro-Kann-Defense"
+        );
+      } else if (opening === "ponziani opening") {
+        alert(
+          "Learn the Ponziani Opening at https://www.chess.com/openings/Ponziani-Opening"
+        );
+      } else if (opening === "catalan opening") {
+        alert(
+          "Learn the Catalan Opening at https://www.chess.com/openings/Catalan-Opening"
+        );
+      } else {
+        alert(
+          "Sorry, I don't have a link for that opening. Please choose Caro-Kann Defense, Ponziani Opening, or Catalan Opening."
+        );
+      }
+
+      function greetUser() {
+        let name = prompt("What is your name?");
+        alert("Hello " + name);
+        let greeting = "Let's play!♞";
+        alert(greeting);
+      }
+
+      greetUser();
+    </script>
+  </body>
+</html>
